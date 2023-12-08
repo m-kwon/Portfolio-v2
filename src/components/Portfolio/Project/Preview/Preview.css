@@ -1,0 +1,121 @@
+.preview-container {
+  position: relative;
+}
+
+.preview-container > video,
+.preview-container > img {
+  width: 100%;
+  height: auto;
+}
+
+.preview-container > video.showFilter {
+  animation: filterImage 500ms;
+  animation-fill-mode: forwards;
+}
+
+.project-icons-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.project-icons-container > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title-icons-container > a:visited {
+  color: rgb(255, 0, 166);
+}
+
+.project-icons-container > button {
+  background-color: unset;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /*   height: 3rem; */
+  width: 33%;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.project-icons-container > button > * {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previewBtn > div {
+  color: var(--pink);
+  cursor: pointer;
+}
+
+.github-link-button > a {
+  color: var(--yellow);
+}
+
+.live-link-button > a {
+  color: var(--orange);
+}
+
+.previewBtn > div:hover {
+  background-color: var(--pink);
+  color: unset;
+}
+
+.github-link-button > a:hover {
+  background-color: var(--yellow);
+  color: unset;
+}
+
+.live-link-button > a:hover {
+  background-color: var(--orange);
+  color: unset;
+}
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.disabled > div {
+  color: grey;
+}
+
+@keyframes filterImage {
+  0% {
+    filter: grayscale(0) invert(0);
+  }
+  50% {
+    filter: grayscale(100%) invert(100%);
+  }
+  100% {
+    filter: grayscale(0) invert(0);
+  }
+}
+
+@media only screen and (max-width: 821px) {
+  .project-container > .preview-container {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .preview-container {
+    min-height: 25vh;
+    overflow: hidden;
+  }
+
+  .project-icons-container {
+    gap: 0;
+  }
+
+  .project-icons-container > button {
+    font-size: 1.1rem;
+  }
+}

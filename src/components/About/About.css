@@ -1,0 +1,71 @@
+.about-container {
+  height: 85vh;
+  height: calc(var(--vh, 1vh) * 85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  font-weight: 600;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  width: 50%;
+  color: var(--yellow);
+  line-height: 1.25;
+}
+
+.about-content {
+  min-height: 2rem;
+  overflow: hidden;
+  margin: 0;
+  padding: 10;
+}
+
+.paragraph1 {
+  margin-bottom: 2rem;
+}
+
+.paragraph4 {
+  margin-top: 2rem;
+}
+
+.red {
+  color: var(--red);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.green {
+  color: var(--green);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+@media only screen and (max-width: 821px) {
+  .about-text {
+    padding: 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-text {
+    width: 100%;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
+
+  .about-content {
+    min-height: 20%;
+  }
+}

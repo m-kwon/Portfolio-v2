@@ -1,0 +1,108 @@
+:root {
+  /*   --animationBackground: rgba(255, 0, 0, 0.1); */
+  --foreground: #dcdfe4;
+  --background-dark: #282a36;
+  --background-light: #44475a;
+  --black: #282c34;
+  --white: #dcdfe4;
+  --blue: rgb(97, 175, 239);
+  --cyan: #56b6c2;
+  --green: rgb(152, 195, 121);
+  --pink: rgb(198, 120, 221);
+  --red: #e06c75;
+  --yellow: #e5c07b;
+  --orange: #ffb86c;
+  --dark-text: #000000;
+  --scrollbar: #33465c;
+  --scrollbar-thumb: #c4c9d0;
+}
+
+.initial {
+  --animationBackground: rgba(95, 95, 95, 0.1);
+}
+
+.about {
+  --animationBackground: rgba(156, 76, 19, 0.1);
+}
+
+.projects {
+  --animationBackground: rgba(24, 128, 63, 0.1);
+}
+
+.skills {
+  --animationBackground: rgba(29, 99, 174, 0.1);
+}
+
+.contact {
+  --animationBackground: rgba(171, 22, 22, 0.1);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.cyan {
+  color: var(--cyan);
+}
+
+.green {
+  color: var(--green);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.red {
+  color: var(--red);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.hide {
+  opacity: 0;
+}
+
+.App {
+  background-color: var(--background-dark);
+  position: relative;
+}
+
+.app-bg:after,
+.app-bg:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--animationBackground);
+  animation: appBackground 120s linear infinite;
+  transition: background-color 10s ease;
+}
+
+.app-bg:after {
+  left: 15vw;
+}
+
+.app-bg:before {
+  right: 15vw;
+  animation-delay: -30s;
+  animation-direction: reverse;
+}
+
+@keyframes appBackground {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,15 @@
+.contact-footer {
+  font-size: 1rem;
+  position: absolute;
+  right: 1rem;
+  width: 100%;
+  text-align: right;
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-footer {
+    position: relative;
+    right: unset;
+    text-align: center;
+  }
+}

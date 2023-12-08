@@ -1,0 +1,61 @@
+.contact-hoverElement {
+  position: relative;
+  cursor: pointer;
+  font-size: 4rem;
+  text-align: center;
+  width: max-content;
+  margin: 2rem auto;
+  color: var(--pink);
+}
+
+.contact-hoverElement:hover .contact-hoverElement-title {
+  -webkit-text-stroke: none;
+}
+
+.contact-hoverElement-title::after {
+  content: attr(data-menu-item-text);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-weight: 900;
+  -webkit-text-stroke: 0.012em var(--pink);
+  color: transparent;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.menu-item-hover-image {
+  width: 200px;
+  height: 230px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 75%;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  margin: -115px 0 0 -99px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.contact-hoverElement:hover .menu-item-hover-image {
+  opacity: 1;
+}
+.contact-hoverElement:hover .contact-hoverElement-title::after {
+  opacity: 1;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 821px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-hoverElement {
+    font-size: 2rem;
+  }
+}

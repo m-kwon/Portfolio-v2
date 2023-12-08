@@ -1,0 +1,14 @@
+.app-footer {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-gh-link {
+  color: var(--white);
+  margin-left: 0.5rem;
+}

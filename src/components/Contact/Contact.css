@@ -1,0 +1,46 @@
+.contact-container::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--scrollbar);
+}
+
+.contact-container::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 10px var(--scrollbar-thumb);
+}
+
+.contact-container {
+  width: 100%;
+  height: 85vh;
+  height: calc(var(--vh, 1vh) * 85);
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar) var(--scrollbar-thumb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact-container > section {
+  max-width: 70ch;
+  height: 100%;
+  color: var(--white);
+}
+
+.lower-container {
+  min-height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-container > section {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .lower-container {
+    align-items: unset;
+  }
+}

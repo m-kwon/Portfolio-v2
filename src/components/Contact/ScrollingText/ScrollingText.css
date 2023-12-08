@@ -1,0 +1,68 @@
+.scrolling-text-container {
+  margin: 0 auto 0 0;
+  height: 10%;
+  margin-bottom: 4rem;
+}
+
+.scrolling-text-content {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 15em;
+}
+
+.scrolling-text-content > span {
+  position: relative;
+  left: 10%;
+  font-weight: bold;
+}
+
+.scrolling-text-content.show > span {
+  animation: slide 10s infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  12.5% {
+    top: 0em;
+  }
+  25% {
+    top: -1.2em;
+  }
+  37.5% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  62.5% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+  87.5% {
+    top: -3.6em;
+  }
+  100% {
+    top: -4.8em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .scrolling-text-container {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .scrolling-text-content {
+    width: unset;
+  }
+
+  .scrolling-text-content > span {
+    left: 0;
+  }
+}

@@ -1,0 +1,43 @@
+.contact-buttons-container {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.contact-buttons-container > a > svg {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.contact-button {
+  opacity: 0;
+  transition: color 100ms ease-in-out;
+}
+
+.contact-button:hover {
+  color: var(--pink);
+}
+
+.contact-button-fadeIn {
+  animation: fadeIn 500ms 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-hoverElement {
+    font-size: 2rem;
+  }
+}
