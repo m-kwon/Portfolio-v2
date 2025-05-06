@@ -1,13 +1,11 @@
 import React, { FC, useEffect } from 'react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
-import Mailto from '../../Mailto/Mailto';
 import './ContactIcons.css';
 
 const ContactIcons: FC = () => {
   useEffect(() => {
     setTimeout(() => {
       const contactButtons = document.querySelectorAll('.contact-button');
-
       contactButtons.forEach((button, index) => {
         setTimeout(() => {
           button.classList.add('skill-item-fadeIn');
@@ -19,17 +17,17 @@ const ContactIcons: FC = () => {
   return (
     <>
       <div className="contact-buttons-container">
-        <Mailto
-          email="matthew.o.kwon@gmail.com"
-          subject="Contact from website"
-          body=""
+        <a
+          href="mailto:matthew.o.kwon@gmail.com?subject=Contact from website"
+          className="contact-button-wrapper"
         >
           <FaEnvelope className="contact-button" size="3rem" />
-        </Mailto>
+        </a>
         <a
           href="https://github.com/m-kwon"
           target="_blank"
           rel="noopener noreferrer"
+          className="contact-button-wrapper"
         >
           <FaGithub className="contact-button" size="3rem" />
         </a>
@@ -37,6 +35,7 @@ const ContactIcons: FC = () => {
           href="https://www.linkedin.com/in/matthewkwon"
           target="_blank"
           rel="noopener noreferrer"
+          className="contact-button-wrapper"
         >
           <FaLinkedin className="contact-button" size="3rem" />
         </a>
