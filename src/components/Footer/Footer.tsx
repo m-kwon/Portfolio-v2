@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 import './Footer.css';
 
 export default function Footer() {
-  const footerText: string = '  2023 | Matthew Kwon |';
+  const footerText: string = '  2025 | Matthew Kwon |';
   return (
     <div className="app-footer">
       {footerText}
