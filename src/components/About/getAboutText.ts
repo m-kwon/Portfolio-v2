@@ -5,17 +5,17 @@ export const getAboutTextParagraph1 = (language: LanguageType) => {
 };
 
 export const getAboutTextParagraph2 = (language: LanguageType) => {
-    return `I'm Matthew and I'm a full-stack web developer.`;
+  return `I'm Matthew, a computer science student at Oregon State University and freelance web developer.`;
 };
 
 export const getAboutTextParagraph3 = (language: LanguageType) => {
-    return `Creating new experiences, implementing eye-pleasing designs, and making them come to life with animations are what I do best. On this website, you'll find several of my past projects and a glimpse into my skills and experiences.`;
+  return `I build side projects that solve everyday problems. From streamlining daily tasks to creating tools that fill gaps in existing software, I enjoy turning practical needs into working solutions.`;
 };
 
 export const getAboutTextParagraph4 = (language: LanguageType) => {
-    return ``;
+  return `This site showcases some of my work across both client projects and personal initiatives. Each project represents my approach to development: identifying real needs and addressing them with straightforward, effective code.`;
 };
 
 export const getAboutTextParagraph5 = (language: LanguageType) => {
-    return `Thank you for visiting!`;
+  return `Thank you for visiting!`;
 };
