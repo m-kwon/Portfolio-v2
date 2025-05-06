@@ -8,6 +8,12 @@
   margin: 1rem 0;
 }
 
+a {
+  width: 2em;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .contact-buttons-container > a > svg {
   color: var(--white);
   cursor: pointer;

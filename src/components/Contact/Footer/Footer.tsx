@@ -4,7 +4,7 @@ import './Footer.css';
 import { revealCharacters, ignoreCharacters } from '../../../utils/utils';
 
 const Footer: FC = () => {
-  const footerText: string = '2023 | Matthew Kwon';
+  const footerText: string = '2025 | Matthew Kwon';
   return (
     <footer className="contact-footer">
       <RandomReveal
